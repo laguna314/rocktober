@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Pulse glow for the ROCKTOBER headline */
+@keyframes pulseGlow {
+  0%, 100% { text-shadow: 0 0 10px rgba(255, 165, 0, 0.8), 0 0 20px rgba(255, 165, 0, 0.6), 0 0 40px rgba(255, 165, 0, 0.4); }
+  50% { text-shadow: 0 0 20px rgba(255, 200, 0, 1), 0 0 40px rgba(255, 200, 0, 0.8), 0 0 60px rgba(255, 200, 0, 0.6); }
+}
+.pulse-glow { animation: pulseGlow 3s ease-in-out infinite; }
