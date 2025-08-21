@@ -3,7 +3,7 @@ import { Calendar, Clock, MapPin, Ticket, Music, ExternalLink, Info, Share2 } fr
 
 // --- CONFIG ---
 const EVENT = {
-  name: 'Rocktober Fest',
+  name: 'Rocktober Fest 2025',
   date: '2025-10-18',
   doorsTimeLocal: '17:00',
   venueName: 'Rockwell Event Center',
@@ -12,9 +12,9 @@ const EVENT = {
   heroTagline: 'A night of heavy music and louder hearts.',
   ticketUrl: 'https://example.com/tickets',
   rsvpUrl: 'https://facebook.com/events/your-event',
-  contactEmail: 'info@rockwelleventcenter.com',
+  contactEmail: 'info@rocktoberamarillo.com',
   mapUrl: 'https://www.google.com/maps/search/?api=1&query=Rockwell+Event+Center+16301+I-27+Canyon+TX+79015',
-  posterUrl: '/poster.jpg',
+  posterUrl: '/rocktober.png',
   backgroundUrl: '/rocktober.png',
 }
 
@@ -25,16 +25,13 @@ const LINEUP = {
     'INSIDES',
     'Labor XII',
     'Black Tie Revolt',
-    'Against All Odds',
-    'All Falls Down',
-    'At All Cost',
   ],
   guests: [
-    'Defected',
-    'Dysastra',
-    'Hypnotik',
-    'Neurotic Mirage',
-    'When The Broken Burn',
+    'The Light Superior',
+    'Bardown',
+    'Stealing Handshakes',
+    'Ghosts of Gray County',
+    'Sevity',
   ],
 }
 
@@ -88,11 +85,15 @@ export default function App() {
       >
         <div className="relative mx-auto max-w-6xl px-6 py-20 md:py-28">
           <div className="flex flex-col items-center text-center gap-6">
-            <p className="tracking-[0.35em] text-xs uppercase text-orange-400/90 drop-shadow-md">Fest</p>
-            <h1 className="text-5xl md:text-7xl font-black tracking-tight text-orange-100 pulse-glow">
-              ROCKTOBER
-              <span className="block text-3xl md:text-5xl font-extrabold mt-2 text-orange-200">{EVENT.cityState} • {localDate.getFullYear()}</span>
-            </h1>
+            <div className="flex flex-col items-center">
+              <img 
+                src="/rocklogo.png" 
+                 alt="Rocktober 2025" 
+                 className="w-[400px] md:w-[600px] object-contain"
+              />
+              <span className="block text-3xl md:text-5xl font-extrabold mt-2 text-orange-200">    {EVENT.cityState} • {localDate.getFullYear()}  </span>
+            </div>
+
             <p className="max-w-2xl text-neutral-100 font-medium">{EVENT.heroTagline}</p>
 
             {/* Date / Time / Venue */}
