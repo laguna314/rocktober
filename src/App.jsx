@@ -17,6 +17,7 @@ const EVENT = {
   mapUrl: 'https://www.google.com/maps/search/?api=1&query=Rockwell+Event+Center+16301+I-27+Canyon+TX+79015',
   posterUrl: '/rocktober.png',
   backgroundUrl: '/rocktober.png',
+  lineupImageUrl: '/poster.png',
 }
 
 const LINEUP = {
@@ -133,6 +134,16 @@ export default function App() {
       {/* Lineup */}
       <section className="mx-auto max-w-6xl px-6 py-16" aria-labelledby="lineup">
         <header className="flex items-end justify-between mb-8">
+          {/* Featured lineup image */}
+            {EVENT.lineupImageUrl && (
+            <img
+              src={EVENT.lineupImageUrl}
+              alt={EVENT.lineupImageAlt || "Lineup banner"}
+              className="w-full max-w-5xl mx-auto mb-8 rounded-2xl shadow-lg object-cover"
+              loading="lazy"
+            />
+            )}
+
           <div>
             <h2 id="lineup" className="text-3xl md:text-4xl font-extrabold text-orange-200">Lineup</h2>
             <p className="text-neutral-300">Subject to change.</p>
