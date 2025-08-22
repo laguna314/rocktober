@@ -79,11 +79,6 @@ export default function App() {
       <section
         className="relative overflow-hidden"
         aria-label="Event hero"
-        style={{
-          backgroundImage: EVENT.posterUrl ? `linear-gradient(to bottom, rgba(10,10,10,.70), rgba(10,10,10,.95)), url(${EVENT.posterUrl})` : undefined,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
       >
         <div className="relative mx-auto max-w-6xl px-6 py-20 md:py-28">
           <div className="flex flex-col items-center text-center gap-6">
