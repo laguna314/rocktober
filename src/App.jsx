@@ -134,15 +134,7 @@ export default function App() {
       {/* Lineup */}
       <section className="mx-auto max-w-6xl px-6 py-16" aria-labelledby="lineup">
         <header className="flex items-end justify-between mb-8">
-          {/* Featured lineup image */}
-            {EVENT.lineupImageUrl && (
-            <img
-              src={EVENT.lineupImageUrl}
-              alt={EVENT.lineupImageAlt || "Lineup banner"}
-              className="w-full max-w-5xl mx-auto mb-8 rounded-2xl shadow-lg object-cover"
-              loading="lazy"
-            />
-            )}
+          
 
           <div>
             <h2 id="lineup" className="text-3xl md:text-4xl font-extrabold text-orange-200">Lineup</h2>
@@ -152,6 +144,16 @@ export default function App() {
             RSVP <ExternalLink className="w-4 h-4" />
           </a>
         </header>
+
+        {/* Featured lineup image */}
+            {EVENT.lineupImageUrl && (
+            <img
+              src={EVENT.lineupImageUrl}
+              alt={EVENT.lineupImageAlt || "Lineup banner"}
+              className="w-full max-w-5xl mx-auto mb-8 rounded-2xl shadow-lg object-cover"
+              loading="lazy"
+            />
+            )}
 
         <div className="grid gap-4 md:grid-cols-2">
           <div className="bg-white/5 border border-neutral-800 rounded-2xl">
