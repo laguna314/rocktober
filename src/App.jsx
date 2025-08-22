@@ -6,10 +6,11 @@ const EVENT = {
   name: 'Rocktober Fest 2025',
   date: '2025-10-18',
   doorsTimeLocal: '17:00',
+  presenter: 'Ecalos Music Initiative',
   venueName: 'Rockwell Event Center',
   venueAddr: '16301 I-27, Canyon, TX 79015',
   cityState: 'Canyon, TX',
-  heroTagline: 'A night of heavy music and louder hearts.',
+  heroTagline: 'Turning Canyon up to 11.',
   ticketUrl: 'https://example.com/tickets',
   rsvpUrl: 'https://facebook.com/events/your-event',
   contactEmail: 'info@rocktoberamarillo.com',
@@ -185,8 +186,8 @@ export default function App() {
           <div>
             <h3 className="text-2xl font-bold mb-3 text-orange-200">Quick Info</h3>
             <ul className="space-y-2 text-neutral-100">
-              <li>• Doors at {formatTime(EVENT.doorsTimeLocal)} • All ages welcome (with guardian) • Bar with ID 21+</li>
-              <li>• Free on-site parking • ADA accessible • Security screening at entry</li>
+              <li>• Doors at {formatTime(EVENT.doorsTimeLocal)} • All ages welcome (with guardian) • BYOB with ID 21+</li>
+              <li>• Free on-site parking • Security screening at entry</li>
               <li>• No outside food/drink • Small bags only (subject to search)</li>
             </ul>
           </div>
@@ -198,9 +199,9 @@ export default function App() {
         <h3 id="faq" className="text-2xl font-bold mb-6 text-orange-200">FAQ</h3>
         <div className="grid gap-4 md:grid-cols-2">
           {[
-            {q: 'Where do I get tickets?', a: 'Use the Buy Tickets button above. Mobile tickets are recommended.'},
+            {q: 'Where do I get tickets?', a: 'Use the Buy Tickets button above.'},
             {q: 'What time is the show?', a: `Doors at ${formatTime(EVENT.doorsTimeLocal)}; music shortly after.`},
-            {q: 'Is there re-entry?', a: 'No re-entry after scanning. Plan accordingly.'},
+            {q: 'Is there re-entry?', a: 'Re-entry permitted with wristband.'},
             {q: 'Refund policy?', a: 'All sales final unless the event is cancelled or rescheduled.'},
           ].map(({q, a}) => (
             <div key={q} className="bg-white/5 border border-neutral-800 rounded-2xl p-5">
@@ -214,7 +215,7 @@ export default function App() {
       {/* Footer */}
       <footer className="border-t border-neutral-800">
         <div className="mx-auto max-w-6xl px-6 py-10 text-sm text-neutral-400 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p>© {new Date().getFullYear()} {EVENT.venueName}. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} {EVENT.presenter}. All rights reserved.</p>
           <p>Questions? <a className="underline hover:text-white" href={`mailto:${EVENT.contactEmail}`}>{EVENT.contactEmail}</a></p>
         </div>
       </footer>
