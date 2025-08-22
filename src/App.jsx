@@ -69,7 +69,7 @@ export default function App() {
     <main
       className="min-h-screen text-neutral-100"
       style={{
-        backgroundImage: `linear-gradient(to bottom, rgba(10,10,10,0.85), rgba(10,10,10,0.95)), url(${EVENT.backgroundUrl})`,
+        backgroundImage: `linear-gradient(to bottom, rgba(10,10,10,0.3), rgba(10,10,10,0.6)), url(${EVENT.backgroundUrl})`,
         backgroundSize: 'cover',
         backgroundAttachment: 'fixed',
         backgroundPosition: 'center',
