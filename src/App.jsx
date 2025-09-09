@@ -13,7 +13,7 @@ const EVENT = {
   heroTagline: 'Turning Canyon up to 11.',
   ticketUrl: 'https://example.com/tickets',
   rsvpUrl: 'https://www.facebook.com/events/1943023656432925',
-  contactEmail: 'info@rocktoberamarillo.com',
+  contactEmail: 'contact@ecalosmusicinitiative.org',
   mapUrl: 'https://www.google.com/maps/search/?api=1&query=Rockwell+Event+Center+16301+I-27+Canyon+TX+79015',
   posterUrl: '/rocktober.png',
   backgroundUrl: '/rocktober.png',
