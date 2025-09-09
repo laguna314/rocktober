@@ -11,7 +11,7 @@ const EVENT = {
   venueAddr: '16301 I-27, Canyon, TX 79015',
   cityState: 'Canyon, TX',
   heroTagline: 'Turning Canyon up to 11.',
-  ticketUrl: 'https://example.com/tickets',
+  ticketUrl: 'https://tearstubs.com/event/592',
   rsvpUrl: 'https://www.facebook.com/events/1943023656432925',
   contactEmail: 'contact@ecalosmusicinitiative.org',
   mapUrl: 'https://www.google.com/maps/search/?api=1&query=Rockwell+Event+Center+16301+I-27+Canyon+TX+79015',
