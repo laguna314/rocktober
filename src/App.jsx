@@ -31,6 +31,7 @@ const LINEUP = {
   guests: [
     'The Light Superior',
     'Bardown',
+    'A Special Case',
     'Stealing Handshakes',
     'Ghosts of Gray County',
     'Sevity',
