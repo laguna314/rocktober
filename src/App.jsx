@@ -125,7 +125,7 @@ export default function App() {
             </div>
             
             {/* Spotify playlist */}
-            <div className="mt-6 max-w-lg mx-auto">
+            <div className="mt-6 max-w-3xl mx-auto">
               <iframe
                 data-testid="embed-iframe"
                 style={{ borderRadius: '12px' }}
