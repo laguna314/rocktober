@@ -123,7 +123,20 @@ export default function App() {
                 </div>
               ))}
             </div>
-            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1zJQ2KauEHnFur6DCPGHEq?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            
+            {/* Spotify playlist */}
+            <div className="mt-6 max-w-lg mx-auto">
+              <iframe
+                data-testid="embed-iframe"
+                style={{ borderRadius: '12px' }}
+                src="https://open.spotify.com/embed/playlist/1zJQ2KauEHnFur6DCPGHEq?utm_source=generator&theme=0"
+                width="100%"
+                height="352"
+                frameBorder="0"
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+              ></iframe>
+            </div>
           </div>
         </div>
       </section>
