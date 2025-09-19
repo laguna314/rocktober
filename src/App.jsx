@@ -22,10 +22,10 @@ const EVENT = {
 
 const LINEUP = {
   headliners: [
-    'Divided Me',
     'Breaking Solace',
-    'INSIDES',
+    'Divided Me',
     'Labor XII',
+    'INSIDES',
     'Black Tie Revolt',
   ],
   guests: [
