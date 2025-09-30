@@ -209,7 +209,7 @@ export default function App() {
           <div>
             <h3 className="text-2xl font-bold mb-3 text-orange-200">Quick Info</h3>
             <ul className="space-y-2 text-neutral-100">
-              <li>• Doors at {formatTime(EVENT.doorsTimeLocal)} • All ages welcome (with guardian) • BYOB with ID 21+</li>
+              <li>• Doors at {formatTime(EVENT.doorsTimeLocal)} • All ages welcome (with guardian)</li>
               <li>• Free on-site parking • Security screening at entry</li>
               <li>• No outside food/drink • Small bags only (subject to search)</li>
             </ul>
